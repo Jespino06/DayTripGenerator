@@ -6,7 +6,7 @@ entertainment_list = ['at a theatrical show!', "at a concert!", "dancing!", "sig
 
 print("")
 
-input("Want a spontanous day trip?! Type Yes ")
+input("Want a spontanous day trip?! Type Yes  ")
 
 print("")
 
@@ -28,7 +28,6 @@ d = (random.choice(entertainment_list))
 
 
 import random
-
 a = (random.choice(location_lists))
 b = (random.choice(restaurant_list))
 c = (random.choice(transportation_list))
@@ -40,8 +39,33 @@ print("You will have such an exciting time " + d + ".")
 
 print("")
 
+input("Want another destination?, type I want something else. ")
+import random
+random_index = random.randrange(len(location_lists))
+print(location_lists[random_index])
 
+print("")
 
+input("Want another restaurant?, type I want something else. ")
+import random
+random_index = random.randrange(len(restaurant_list))
+print(restaurant_list[random_index])
+
+print("")
+
+input("Want another transportation?, type I want something else. ")
+import random
+random_index = random.randrange(len(transportation_list))
+print(transportation_list[random_index])
+
+print("")
+
+input("Want another entertainment?, type I want something else. ")
+import random
+random_index = random.randrange(len(entertainment_list))
+print(entertainment_list[random_index])
+
+print("")
 
 
 
