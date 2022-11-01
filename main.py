@@ -21,15 +21,6 @@ randomly_selected_transportation = randomizer_list(Transportation_list)
 randomly_selected_entertainment = randomizer_list(Entertainment_list)
 
 
-def display_trip(destination, restaurant, transportation, entertainment):
-    result = (destination + restaurant + transportation + entertainment)
-    return result
-
-display_trip(randomly_selected_destination, randomly_selected_restaurant, randomly_selected_transportation, randomly_selected_entertainment)
-print(randomly_selected_destination)
-print(randomly_selected_restaurant)
-print(randomly_selected_transportation)
-print(randomly_selected_entertainment)
 
 
 def destination_generator():
@@ -59,85 +50,14 @@ print(randomly_selected_destination)
 
 
 
-    
+def display_trip():
+    result = (randomly_selected_destination + randomly_selected_restaurant + randomly_selected_transportation + randomly_selected_entertainment)
+    return result
 
+display_trip()
+print(randomly_selected_destination)
+print(randomly_selected_restaurant)
+print(randomly_selected_transportation)
+print(randomly_selected_entertainment)
 
-
-        
-
-
-
-
-
-
-# input("Are you happy with all of the selections, if not which would you change? " )
-
-# def confirm_trip():
-#     while input == "Yes":
-#        print(randomly_selected_destination)
-#     if input == "No, change location":
-#        print(randomly_selected_destination = randomizer_list(Location_list)) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import random
-# b = (random.choice(Restaurant_list))
-
-
-# import random
-# c = (random.choice(Transportation_list))
-
-
-# import random
-# d = (random.choice(Entertainment_list))
-
-
-# #Execution of random choices
-# import random
-# a = (random.choice(Location_list))
-# b = (random.choice(Restaurant_list))
-# c = (random.choice(Transportation_list))
-# d = (random.choice(Entertainment_list))
-# print("You have an exciting trip to " + a) 
-# print("Your special place to dine is " + b)
-# print("Your mode of transportation is " + c)
-# print("You will have such an exciting time " + d)
-
-
-# print("")
-
-# new_choice=input("Not happy with a selection, key in: Location, Restaurant, Transportation, or Entertainment.  ")
-
-# if new_choice == "Location":
-#     print("Your new selection is :", random.choice(Location_list))
-# elif new_choice == "Restaurant":
-#     print("Your new selection is :", random.choice(Restaurant_list))
-# elif new_choice == "Transportation":
-#     print("Your new selection is :", random.choice(Transportation_list))
-# elif new_choice == "Entertainment":
-#     print("Your new selection is :", random.choice(Entertainment_list))
-
- 
-
-
-
-
-# from random import choice
-
-
+print("")
